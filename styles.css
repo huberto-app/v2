@@ -1,0 +1,25 @@
+/* Scrollbar simple */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+    background: #262626;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #FFE600;
+}
+
+/* Modo oscuro limpio para Leaflet */
+.leaflet-layer,
+.leaflet-control-zoom,
+.leaflet-control-attribution {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+.leaflet-container {
+    background-color: #0A0A0A !important;
+}
